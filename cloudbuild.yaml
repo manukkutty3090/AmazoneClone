@@ -7,5 +7,4 @@ images:
 
 serviceAccount: 'devops-464507@appspot.gserviceaccount.com'
 
-options:
-  defaultLogsBucketBehavior: CLOUD_LOGGING_ONLY
+logsBucket: 'gs://your-custom-logs-bucket'
