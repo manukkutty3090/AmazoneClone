@@ -6,5 +6,3 @@ images:
   - 'gcr.io/$PROJECT_ID/my-image'
 
 serviceAccount: 'devops-464507@appspot.gserviceaccount.com'
-
-logsBucket: 'gs://your-custom-logs-bucket'
