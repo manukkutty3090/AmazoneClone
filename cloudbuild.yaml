@@ -1,9 +1,9 @@
 steps:
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'asia-south1-docker.pkg.dev/devops-464507/gcr.io/cicd-1-image', '.']
+    args: ['build', '-t', 'asia-south1-docker.pkg.dev/devops-464507/gcpdevops/myapp', '.']
 
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'asia-south1-docker.pkg.dev/devops-464507/gcr.io/cicd-1-image']
+    args: ['push', 'asia-south1-docker.pkg.dev/devops-464507/gcpdevops/myapp']
 
 options:
   logging: CLOUD_LOGGING_ONLY
