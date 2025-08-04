@@ -1,9 +1,9 @@
 steps:
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['build', '-t', 'asia-south1-docker.pkg.dev/devops-464507/gcpdevops/myapp', '.']
+    args: ['build', '-t', 'asia-south1-docker.pkg.dev/devops-464507/Amazonclone/SamplePythonCodeFromGCP', '.']
 
   - name: 'gcr.io/cloud-builders/docker'
-    args: ['push', 'asia-south1-docker.pkg.dev/devops-464507/gcpdevops/myapp']
+    args: ['push', 'asia-south1-docker.pkg.dev/devops-464507/Amazonclone/SamplePythonCodeFromGCP']
 
 options:
   logging: CLOUD_LOGGING_ONLY
