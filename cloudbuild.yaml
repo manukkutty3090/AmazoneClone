@@ -5,5 +5,11 @@ steps:
   - name: 'gcr.io/cloud-builders/docker'
     args: ['push', 'asia-south1-docker.pkg.dev/devops-464507/amazonclone/myapp']
 
+  - name: 'gcr.io/google.com/cloudsdktool/cloud-sdk'
+    entrypoint: gcloud
+    args: ['run', 'deploy', 'runwithcicd', '--image', 'asia-south1-docker.pkg.dev/devops-464507/amazonclone/myapp', '--region', 'asia-south1', '--allow-unauthenticated']
+images:
+- asia-south1-docker.pkg.dev/devops-464507/amazonclone/myapp
+
 options:
   logging: CLOUD_LOGGING_ONLY
